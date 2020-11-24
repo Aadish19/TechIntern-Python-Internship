@@ -1,0 +1,23 @@
+1)Create three variables (a,b,c) to same value of any integer & do the following
+a) Divide a by 10 b) Multiply b by 50 c) Add c value by 60
+
+Ans=>
+a=b=c=10
+print(a/10)
+print(b*10)
+print(c+50)
+
+2)Create a String variable of 5 characters and replace the 3rd character with G
+ans=>
+string="Inter"
+str=string.replace('r','G')
+print(str)
+
+
+3)Create two values (a,b) of int,float data type & convert the vise versa, Hint : convert a from int to float datatype & b from float to int datatype
+ans=>
+a=10
+b=10.5
+a=float(10/4)
+b=int(10.5//6)
+print(a,b)
