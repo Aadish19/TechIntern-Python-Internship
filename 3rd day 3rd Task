@@ -1,0 +1,25 @@
+1).Write a python Script to merge two Python Dictionaries??
+p={'n':1,'m':2,'l':3}
+q={'k':"A",'f':"B",'q':"C"}
+p.update(q)
+print(p)
+
+2).Write a python program to remove a key from a dictionary?
+q={'k':"A",'f':"B",'q':"C"}
+q.pop('f')
+print(q)
+
+3).Write a python program to map two lists into a dictionary?
+keys=['Chitkara','Language','Tech']
+values=['University','Python','Internship']
+print(dict(zip(keys,values)))
+
+4).Write a program to find the length of a set??
+seta=set([1,2,3])
+print(seta)
+print(len(seta))
+
+5).Write a Python Program to remove the intersection of a 2nd set from 1st set??
+a={1,2,3,4}
+b={4,5,6,7}
+print(a-b)
