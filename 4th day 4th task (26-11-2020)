@@ -1,0 +1,43 @@
+1. Write a program to create a list of n integer values and do the following::
+• Add an item in to the list (using function)
+ • Delete (using function)
+ ANS==
+ def list_manipulate(l1):
+    l1.insert(3,'l')
+    l1.pop()
+    
+    return l1
+    
+l=[]
+n=int(input())
+for i in range(n):
+    k=int(input())
+    l.append(k)
+print(list_manipulate(l))
+---------------------------------------------xx-----------------------------------------------
+ • Store the largest number from the list to a variable 
+ ANS==
+l1=[2,4,31,43,56]
+l1.sort()
+Largest_num=l1.pop()
+print(Largest_num)
+------------------------------xxxxxx----------------------------------------
+ • Store the Smallest number from the list to a variable
+ ANS==
+l1=[2,4,31,43,56]
+l1.sort()
+Smallest=l1[0]
+print(Smallest)
+---------------------x----------------x---------------x---------------
+2) Create a tuple and print the reverse of the created tuple
+ANS==
+a=1,2,3
+print(a)
+
+b=list(a)
+print(tuple(b[::-1]))
+-------------xx---------------------x----------------x-------------
+3) Create a tuple and convert tuple into list
+ANS==
+a=1,3,4
+print(list(a))
