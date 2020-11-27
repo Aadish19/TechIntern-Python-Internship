@@ -1,0 +1,23 @@
+Exercise:
+1)Create a function getting two integer inputs from user. & print the following: Addition of two numbers is +value Subtraction of two numbers is +value Division of two numbers is +value Multiplication of two numbers is +value Here the value represents math function associated
+ANS==
+a=int(input())
+b=int(input())
+​
+def mathfun(a,b):
+    
+    print("Addition of two numbers is=",a+b)
+    print("Substraction of two numbers is =",a-b)
+    print("Division of two numbers is =",a/b)
+    print("Multiplication of two numbers is =",a*b)
+mathfun(a,b)
+-------------------xxx---------------------xx-------------------------------------------------------------------
+2. Create a function covid( ) & it should accept patient name, and body temperature,
+by default the body temperature should be 98 degree
+
+ANS==
+def covid(pname,bodytemp=98):
+    pname=input("patientname")
+    bodytemp=int(input(bodytemp))
+    
+covid('pname')
