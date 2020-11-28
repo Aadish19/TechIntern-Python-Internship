@@ -1,0 +1,107 @@
+• Write a program to loop through a list of numbers and add +2 to every value to elements in list
+ANS::
+l=[1,2,3,4,5,6]
+for i in l:
+    print(i+2)
+-----------------------XX---------------------XX----------------XX--------------
+• Write a program to get the below pattern
+54321 4321 321 21 1
+ANS::
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print()
+  -----------------------XX---------------------XX----------------XX--------------
+• Python Program to Print the Fibonacci sequence
+ANS::
+f1=f2
+f0=0
+f1=1
+n=5
+​
+for i in range(n):
+    print(f2)
+    f0=f1
+    f1=f2
+    
+    f2=f1+f0
+-----------------------XX---------------------XX----------------XX--------------
+• Explain Armstrong number and write a code with a function
+ANS::
+Armstrong Number::
+In case of an Armstrong number of 3 digits, the sum of cubes of each digit is equal to the number itself.
+153 = 1*1*1 + 5*5*5 + 3*3*3  // 153 is an Armstrong number.
+​
+​
+sum=0
+n=int(input())
+temp=n
+while(n>0):
+    d=n%10
+    sum=sum+(d*d*d)
+    n=n//10
+if temp==sum:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+-----------------------XX---------------------XX----------------XX--------------
+• Write a program to print the multiplication table of 9
+ANS::
+num=9
+for i in range(1, 11):
+    n=num*i
+    print(num, 'x', i, '=', n)
+-----------------------XX---------------------XX----------------XX--------------
+• Check if a program is negative or positive
+ANS::
+program=int(input())
+if program>0:
+    print("Positive")
+elif program<0:
+    print("Negative")
+-----------------------XX---------------------XX----------------XX--------------
+• Write a program to convert the number of days to ages
+ANS::
+days=int(input())
+ages=days/365
+print(ages)
+-----------------------XX---------------------XX----------------XX--------------
+• Solve Trigonometry problem using math function write a program to solve using math function
+ANS::
+import math
+math.sin(23)
+---------------XX---------XX------------------------XXX--------------------
+• Create a calculator only on a code level by using if condition (Basic arithmetic calculation)
+))
+ANS::
+print("Calculator")
+print("For Addition press +")
+print("For Substraction press -")
+print("For Multiplication press *")
+print("For Division press /")
+​
+​
+ch=(input())
+​
+if ch=='+':
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a+b
+    print("Sum = ",c)
+elif ch=='-':
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a-b
+    print("Difference = ",c)
+elif  ch=='*':
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a*b
+    print("Product = ",c)
+elif ch=='/':
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a/b
+    print("Quotient = ",c)
+else:
+    print("Invalid Choice")
