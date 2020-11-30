@@ -1,0 +1,135 @@
+Question 1:: 	List down all the error types and check all the errors using a python program for all errors
+ERRORS AND EXCEPTION HANDLING==
+
+1).Syntax Errors
+print "hello"
+Error:Missing parentheses in call to 'print'
+    
+2).Index Error== is thrown when trying to access an item at an invalid index.
+li=[1,2,3]
+print(li[3])
+error:List Index out of range
+    
+3).Module Not Found error== is thrown when a module could not be found.
+import amoduletofound
+Error:No module named 'amoduletofound'
+    
+4)Key Error==is thrown when a key is not found.
+   D1={'1':"aa", '2':"bb", '3':"cc"}
+   D1['4']
+Error:'4'
+    
+5).Import Error==is thrown when a specified function can not be found.
+from math import sqrt
+Error:cannot import name
+    
+6).StopIteration error== is thrown when the next() function goes beyond the iterator items.
+>>> it=iter([1,2,3])
+>>> next(it)
+1
+>>> next(it)
+2
+>>> next(it)
+3
+>>> next(it)
+​
+7)Type Error== is thrown when an operation or function is applied to an object of an inappropriate type.
+'2'+2
+Error:Must be str , not int
+    
+8).ValueError ==is thrown when a function's argument is of an inappropriate type.
+int('xyz')
+Error: invalid literal for int() with base 10: 'xyz'
+        
+9).NameError ==is thrown when an object could not be found.
+age
+Error: name 'age' is not defined
+    
+10).ZeroDivisionError == is thrown when the second operator in the division is zero.
+x=100/0
+Error:division by zero
+    
+11).KeyboardInterrupt is thrown when the user hits the interrupt key (normally Control-C) during the execution of the program
+>>> name=input('enter your name')
+enter your name^c
+keyboardInterrrupt
+
+----------------------------------------x-----x-x---------------x---------------------------------
+Question 2::::	Design a simple calculator app with try and except for all use cases
+try:
+    
+    n1=int(input("Enter First Number: "))
+    n2=int(input("Enter Second Number: "))
+    method=input("Enter Arithmetic Operator: ")
+
+    if method == '+':
+    
+        print(n1,"+",n2,"=",n1+n2)
+    
+    elif method == '-':
+        
+        print(n1,"-",n2,"=",n1-n2)
+    
+    elif method == '*':
+        
+        print(n1,"*",n2,"=",n1*n2)
+    
+    elif method == '/':
+        
+        try:
+            
+            print(n1,"/",n2,"=",n1/n2)
+            
+        except ZeroDivisionError:
+            
+            print("/ by zero")
+    
+    elif method == '%':
+    
+        print(n1,"%",n2,"=",n1%n2)
+    
+    else:
+        
+        print("Invalid method")
+        
+except:
+    
+    raise Exception("Invalid Input")
+    
+    
+------------------------------xxxxxxxxxxxxxxx------------------------------------------------
+
+Question  3::	Design a simple calculator app with try and except for all use cases
+try:
+    
+    print(val)
+
+except NameError:
+    
+    print("Value is not defined")
+    
+except:
+    print("Other values are not defined")
+    
+ ------------------xxx----------------xxx-------------------
+ Question 4::	When try-except scenario is not required?
+ 
+When the input is perfect, clear, and as per the requirement, then at that time, we can ignore the try-except block.
+
+---------------x--------xxx-------------xxx---------------xx-----------------
+Question5::	Try getting an input inside the try catch block
+
+try:
+    
+    anyvalue = int(input())
+    
+    print(anyvalue)
+    
+except:
+    print("Value is not defined")
+    
+ ------------------xx----------xx--------xx----------------------------------
+ 
+ 
+
+ 
