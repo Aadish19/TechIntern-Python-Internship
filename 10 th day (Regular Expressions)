@@ -1,0 +1,126 @@
+
+import re
+​
+txt = "The rain in Spain"
+x = re.search("^The.Spain$", txt)
+print((x))
+None
+----------------------------------------------------------------------------------------------------------
+import re 
+txt = "The rain in Spain"
+x=re.findall("in",txt)
+print(x)
+['in', 'in', 'in']
+----------------------------------------------------------------------------------------------------------
+search
+
+import re 
+txt = "The rain in Spain"
+x=re.search("in",txt)
+print(x)
+<re.Match object; span=(6, 8), match='in'>
+----------------------------------------------------------------------------------------------------------
+mple of search 
+#Example of search 
+import re
+​
+txt = "The rain in Spain"
+x = re.search("\s", txt)
+​
+print("The first white-space character is located in position:", x.start())
+​
+The first white-space character is located in position: 3
+i----------------------------------------------------------------------------------------------------------
+import re
+​
+txt = "The rain in Spain"
+x = re.split("\s", txt)
+print(x)
+['The', 'rain', 'in', 'Spain']
+----------------------------------------------------------------------------------------------------------
+##  split()
+import re
+​
+txt = "The rain in Spain"
+x = re.split("\s", txt, 1)
+print(x)
+['The', 'rain in Spain']
+----------------------------------------------------------------------------------------------------------
+import re
+​
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
+The9rain9in9Spain
+----------------------------------------------------------------------------------------------------------
+# Sub()
+import re
+​
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt, 2)
+print(x)
+The9rain9in Spain
+----------------------------------------------------------------------------------------------------------
+Math Object
+​----------------------------------------------------------------------------------------------------------
+​----------------------------------------------------------------------------------------------------------
+.span() returns a tuple containing the start-, and end positions of the match.
+.string returns the string passed into the function
+.group() returns the part of the string where there was a match
+----------------------------------------------------------------------------------------------------------
+import re
+​
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
+(12, 17)
+----------------------------------------------------------------------------------------------------------
+import re
+​
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.string)
+The rain in Spain
+----------------------------------------------------------------------------------------------------------
+import re
+​
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+Spain
+---------------------------------------------------------- Tasks Start Here ----------------------------------------------------------------------------------------------------------
+import re
+​
+string = "BestEnlist Python Bootcamp is doing a really a good job"
+​
+print(re.search(r"[a-zA-Z0-9\s_]+",string))
+<re.Match object; span=(0, 55), match='BestEnlist Python Bootcamp is doing a really a go>
+,program
+----------------------------------------------------------------------------------------------------------
+import re
+program=" matches ab in stable program"
+​
+print(re.search("ab",program))
+<re.Match object; span=(9, 11), match='ab'>
+----------------------------------------------------------------------------------------------------------
+string = "list1 list2 list4"
+​
+print(*re.findall(r"[0-9]+",string))
+1 2 4
+----------------------------------------------------------------------------------------------------------
+string = "list1 list2 list4"
+​
+print(re.findall(r"[0-9]+",string))
+['1', '2', '4']
+456456
+----------------------------------------------------------------------------------------------------------
+string = "Every day(1234567) should(456456) start with new idea of codes"
+​
+print(re.findall(r"\d{1,3}",string))
+['123', '456', '7', '456', '456']
+----------------------------------------------------------------------------------------------------------
+
+string = "Hello JARVIS"
+​
+print(*re.findall(r"[A-Z]+",string))
+H JARVIS
